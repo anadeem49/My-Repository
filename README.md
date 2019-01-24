@@ -1,3 +1,3 @@
 # test-repo
-demo
+
 The projects in this repository represent the course assignments I completed when I took CISC 1115 (Introduction to Java Programming) at CUNY Brooklyn College. Even though they are beginener's level programs, they accurately represent and apply to real life situations. More to come........
