@@ -17,10 +17,29 @@ public class charityCollector{
     
     double[] donations = new double [50];
     
+    int median = 0;
+    
     double median1 = 0, total = 0;
     
     int donorCount = readArray(idNumbers, donations, input);
     
-    //return 
+    //return value n from readArray used to initialize donorCount
+    
+    System.out.println("Original Array");
+    
+    System.out.println("IDs \t Donations");
+    
+    printArray(idNumbers, donations, donorCount);
+    
+    //print the original array
+    
+    System.out.println("Bubble Sort");
+    
+    system.out.println("IDs \t Donations");
+    
+    printArray(idNumbers, donations, donorCount);
+    
+    //to be continued ............
+    
     
     
