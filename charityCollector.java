@@ -55,10 +55,47 @@ public class charityCollector{
   }
   
   //this method prints the arrays in two lines with their appropriate heading
-  public
-      
-    
-    
-    
-    
-    
+  public static void printArray(int [] id, double [] donations, int [] donorCount){
+    for (int i = 0; i < donorCount; i++)
+      System.out.println("%d $%.2f\n", id[i], donations[i]);
+    System.out.println("\n\n");
+  }
+  
+  //this method takes the two arrays and the donorCount and performs a selection sort && sorts by idNumbs in ascending order
+  public static void selectionSort(int [] id, double [] donations, int donorCount){
+    for (int pass = 0; pass < donorCount - 1; pass++){
+      for (int cand = pass + 1; cand < donorCount; cand++)
+        if (id[cand] < id[pass]){
+          int temp = id[cand]; //temporary value holder
+          double temp1 = donations[cand];
+          id[cand] = id[pass];
+          donations[cand] = donations[pass];
+          id[pass] = temp;
+          donations[pass] = temp1;
+        }
+    }
+    return;
+  }
+  
+  //this method takes the two arrays and the donorCount and performs a bubble sort
+  //it sorts by donations in descending order
+  public static void bubbleSort(int [] id, double [] donations, int donorCount){
+    boolean swap;
+    do{
+      swap = false;
+      for (int pos = 0; pos < donorCount - 1; pos++){
+        if (donations[pos + 1] > donations[pos]){
+          double temp = donations[pos + 1]; //temporary value holder
+          int temp2 = id[pos + 1];
+          donations[pos + 1] = donations[pos];
+          id[pos + 1] = id[pos];
+          donations[pos] = temp;
+          id[pos] = temp2;
+          swap = true;
+        }
+      }
+    }
+    while(swap);
+    return;
+  }
+}
