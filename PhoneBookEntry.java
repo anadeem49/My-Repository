@@ -1,5 +1,5 @@
 /* Given a text file of parallel arrays (the first array of last names, the second with first names, and the third with
-phone numbers), this algorithm allows the user to look up the number of the entry via reverse look up and the name via 
+phone numbers), this algorithm allows the user to look up the phone number of the entry via reverse look up and the name via 
 look up; it also handles exceptions of an existing text file and first name/last name or the corresponding phone number
 entry.
 */
