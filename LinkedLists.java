@@ -162,3 +162,4 @@ public class LinkedList{
 
 		LinkedList list = new LinkedList(); list.input(); list.process();
 	}
+}
