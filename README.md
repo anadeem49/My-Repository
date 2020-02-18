@@ -1,3 +1,3 @@
 # My Porfolio
 
-The projects in this repository so far represent my accomplishments during my academic career. More to come...........
+3130A1: This assignment entailed reading a text file into an array and sorting it via bubble sort. Then the sorted data in the         array was fed to the linked list.
