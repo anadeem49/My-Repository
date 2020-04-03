@@ -1,4 +1,61 @@
 import java.util.*;
+
+public class HashMap extends TreeMap<String, String>{
+	
+	private static String movieTitle, movieGenre;
+	private static HashMap hashmap; 
+
+	/**INPUT: the instance 
+	 * PROCESS: initilizes the instance
+	 * OUTPUT: returns a new Map
+	 * */
+	public HashMap(String name, String type) {
+		movieTitle = name;
+		movieGenre = type;
+	}
+	
+	/**INPUT: None
+	 * PROCESS: gets the Key of the Map
+	 * OUTPUT: the movie title
+	 * */	
+	public String getKey() {
+		return movieTitle;
+	}
+	
+	/**INPUT: None
+	 * PROCESS: gets the Value of the map
+	 * OUTPUT: the movie genre
+	 * */
+	public String getValue() {
+		return movieGenre;
+	}
+	
+	/**INPUT: None
+	 * PROCESS: Formats the key-value pairs into a String
+	 * OUTPUT: The formatted String
+	 * */
+	public String toString() {
+		return "{" + getKey() + " = " + getValue() + "}";
+	}
+	
+	/**INPUT: None
+	 * PROCESS: Creates a new HashMap with the required parameters
+	 * OUTPUT: the hashmap
+	 * */
+	public static HashMap create() {
+		hashmap = new HashMap(movieTitle, movieGenre);
+		return hashmap;
+	}
+	
+	/**INPUT: None
+	 * PROCESS: prints the hashmap by invoking toString 
+	 * OUTPUT: None
+	 * */
+	public static void print() {
+		System.out.println("\n" + hashmap.toString());
+	}
+}
+import java.util.*;
 import java.io.*;
 
 public class Main {
@@ -233,57 +290,3 @@ public class Main {
 		file.close();
 	}
 }
-public class HashMap extends TreeMap<String, String>{
-	
-	private static String movieTitle, movieGenre;
-	private static HashMap hashmap; 
-
-	/**INPUT: the instance 
-	 * PROCESS: initilizes the instance
-	 * OUTPUT: returns a new Map
-	 * */
-	public HashMap(String name, String type) {
-		movieTitle = name;
-		movieGenre = type;
-	}
-	
-	/**INPUT: None
-	 * PROCESS: gets the Key of the Map
-	 * OUTPUT: the movie title
-	 * */	
-	public String getKey() {
-		return movieTitle;
-	}
-	
-	/**INPUT: None
-	 * PROCESS: gets the Value of the map
-	 * OUTPUT: the movie genre
-	 * */
-	public String getValue() {
-		return movieGenre;
-	}
-	
-	/**INPUT: None
-	 * PROCESS: Formats the key-value pairs into a String
-	 * OUTPUT: The formatted String
-	 * */
-	public String toString() {
-		return "{" + getKey() + " = " + getValue() + "}";
-	}
-	
-	/**INPUT: None
-	 * PROCESS: Creates a new HashMap with the required parameters
-	 * OUTPUT: the hashmap
-	 * */
-	public static HashMap create() {
-		hashmap = new HashMap(movieTitle, movieGenre);
-		return hashmap;
-	}
-	
-	/**INPUT: None
-	 * PROCESS: prints the hashmap by invoking toString 
-	 * OUTPUT: None
-	 * */
-	public static void print() {
-		System.out.println("\n" + hashmap.toString());
-	}
