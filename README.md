@@ -6,3 +6,5 @@
 
 3130A3: This assignment entailed using BinaryTrees to print out the movie titles and corresponding release years. And finally,
         the assignment asked for the subsets of the text file with the any start and end values for the desired subsets.
+        
+3130A4: This assignment entailed using a HashMap to print out the movie title and its corresponding genre. Then the assignment         asked for the number of movies per genre AND the number of movies per given year (preferably within the last five).
