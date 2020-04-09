@@ -1,0 +1,27 @@
+h, p, div, li{
+  color: white;
+  font-family: Times New Roman;
+}
+
+body{
+  background-color: gray;
+}
+
+.img-responsive{
+  display: inline;
+  float: left;
+  max-width: 100%;
+  height: auto;
+}
+
+.content img {
+  margin-left: 10px;
+  display: block;
+}
+
+#myCarousel{
+  width: 256px;
+  border: 2px solid #0000FF;
+  margin-right: auto;
+  margin-left: auto;
+}
