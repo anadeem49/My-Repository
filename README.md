@@ -8,3 +8,6 @@
         the assignment asked for the subsets of the text file with the any start and end values for the desired subsets.
         
 3130A4: This assignment entailed using a HashMap to print out the movie title and its corresponding genre. Then the assignment         asked for the number of movies per genre AND the number of movies per given year (preferably within the last five).
+
+3130A5: This assignment entaild creating a personal portfolio using HTML and CSS, because the HTML tags are organized like a           Tree data structure and CSS is organized like a Hash Map. We were to used GitHub pages as a source/starting point for
+        our portfolios. 
