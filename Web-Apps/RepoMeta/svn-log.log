@@ -1,1 +1,171 @@
-#################
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+ahsns-MacBook-Air:Desktop ahsannadeem$ svnadmin create ~/Desktop/Repo2
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn commit message "inverted the equality symbol in my assert"
+svn: E155007: '/Users/ahsannadeem/Desktop/message' is not a working copy
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn revert plugins/south
+svn: E155007: '/Users/ahsannadeem/Desktop/plugins/south' is not a working copy
+ahsns-MacBook-Air:Desktop ahsannadeem$ rm -rf content
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn checkout content
+svn: E205000: Try 'svn help checkout' for more information
+svn: E205000: Error parsing arguments
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn commit message "inverted equality symbol in assert"
+svn: E155007: '/Users/ahsannadeem/Desktop/message' is not a working copy
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn checkout content
+svn: E205000: Try 'svn help checkout' for more information
+svn: E205000: Error parsing arguments
+ahsns-MacBook-Air:Desktop ahsannadeem$ 
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+ahsns-MacBook-Air:~ ahsannadeem$ cd ~/Desktop/
+ahsns-MacBook-Air:Desktop ahsannadeem$ cd Repo1/
+ahsns-MacBook-Air:Repo1 ahsannadeem$ cd hello/
+ahsns-MacBook-Air:hello ahsannadeem$ git commit -m "Added "hello Ahsan Nadeem" to my hello.py file"
+error: pathspec 'Ahsan' did not match any file(s) known to git.
+error: pathspec 'Nadeem to my hello.py file' did not match any file(s) known to git.
+ahsns-MacBook-Air:hello ahsannadeem$ git commit -m "Added hello Ahsan Nadeem to hello.py"
+On branch master
+
+Initial commit
+
+Untracked files:
+	./
+
+nothing added to commit but untracked files present
+ahsns-MacBook-Air:hello ahsannadeem$ ls hello.py
+hello.py
+ahsns-MacBook-Air:hello ahsannadeem$ cat hello.py
+def hello():
+    return "Hello world"
+
+if __name__ == '__main__':
+    print(hello())
+    print("Hello Ahsan Nadeem")
+ahsns-MacBook-Air:hello ahsannadeem$ git commit -m "Added my name to the print message"
+On branch master
+
+Initial commit
+
+Untracked files:
+	./
+
+nothing added to commit but untracked files present
+ahsns-MacBook-Air:hello ahsannadeem$ git add hello.py
+ahsns-MacBook-Air:hello ahsannadeem$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+ahsns-MacBook-Air:hello ahsannadeem$ git pull ~/hello.py/
+fatal: '/Users/ahsannadeem/hello.py/' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ahsns-MacBook-Air:hello ahsannadeem$ git pull Repo1/hello/hello.py/
+fatal: 'Repo1/hello/hello.py/' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ahsns-MacBook-Air:hello ahsannadeem$ git add hello.py
+ahsns-MacBook-Air:hello ahsannadeem$ git add --all
+ahsns-MacBook-Air:hello ahsannadeem$ git add -u
+ahsns-MacBook-Air:hello ahsannadeem$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+ahsns-MacBook-Air:hello ahsannadeem$ cd ~Desktop/
+-bash: cd: ~Desktop/: No such file or directory
+ahsns-MacBook-Air:hello ahsannadeem$ cd ~/Desktop/
+ahsns-MacBook-Air:Desktop ahsannadeem$ git add ~/Repo1/
+fatal: Invalid path '/Users/ahsannadeem/Repo1': No such file or directory
+ahsns-MacBook-Air:Desktop ahsannadeem$ git add Desktop/Repo1/
+fatal: pathspec 'Desktop/Repo1/' did not match any files
+ahsns-MacBook-Air:Desktop ahsannadeem$ git add ~/Desktop/Repo1/
+ahsns-MacBook-Air:Desktop ahsannadeem$ 
+  [Restored Mar 17, 2021 at 11:10:30]
+Last login: Wed Mar 17 10:37:50 on ttys000
+Restored session: Wed Mar 17 11:10:24 EDT 2021
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+ahsns-MacBook-Air:Desktop ahsannadeem$ svnadmin create ~/Desktop/Repo2
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn commit message "inverted the equality symobol in my assert"
+svn: E155007: '/Users/ahsannadeem/Desktop/message' is not a working copy
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn revert plugins/south
+svn: E155007: '/Users/ahsannadeem/Desktop/plugins/south' is not a working copy
+ahsns-MacBook-Air:Desktop ahsannadeem$ rm -rf content
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn checkout content
+svn: E205000: Try 'svn help checkout' for more information
+svn: E205000: Error parsing arguments
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn commit message "inverted equality symbol in assert"
+svn: E155007: '/Users/ahsannadeem/Desktop/message' is not a working copy
+ahsns-MacBook-Air:Desktop ahsannadeem$ svn checkout content
+svn: E205000: Try 'svn help checkout' for more information
+svn: E205000: Error parsing arguments
+ahsns-MacBook-Air:Desktop ahsannadeem$ 
+  [Restored Mar 18, 2021 at 10:08:30]
+Last login: Thu Mar 18 08:32:44 on console
+Restored session: Wed Mar 17 12:01:07 EDT 2021
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+ahsns-MacBook-Air:Desktop ahsannadeem$ cd ~/Desktop/Repo2
+ahsns-MacBook-Air:Repo2 ahsannadeem$ svn commit message "assert equality symbol inverted"
+svn: E155007: '/Users/ahsannadeem/Desktop/Repo2/message' is not a working copy
+ahsns-MacBook-Air:Repo2 ahsannadeem$ svn commit --force-log -F test_hello.py foo.c
+svn: E000002: Can't open file 'test_hello.py': No such file or directory
+ahsns-MacBook-Air:Repo2 ahsannadeem$ cd ~/Repo2/test_hello.svn
+-bash: cd: /Users/ahsannadeem/Repo2/test_hello.svn: No such file or directory
+ahsns-MacBook-Air:Repo2 ahsannadeem$ cd ~/Repo2/test_hello.svn/
+-bash: cd: /Users/ahsannadeem/Repo2/test_hello.svn/: No such file or directory
+ahsns-MacBook-Air:Repo2 ahsannadeem$ cd Desktop/Repo2/test_hello.svn/
+-bash: cd: Desktop/Repo2/test_hello.svn/: No such file or directory
+ahsns-MacBook-Air:Repo2 ahsannadeem$ cd Desktop/Repo2/test_hello.svn/test_hello.py/
+-bash: cd: Desktop/Repo2/test_hello.svn/test_hello.py/: No such file or directory
+ahsns-MacBook-Air:Repo2 ahsannadeem$ cd ~/Desktop/test_hello.svn/
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ svn commit --force-log -F test_hello.py foo.c
+svn: E155007: '/Users/ahsannadeem/Desktop/test_hello.svn/foo.c' is not a working copy
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ cd test_hello.svn/test_hello.py
+-bash: cd: test_hello.svn/test_hello.py: No such file or directory
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ cd ~/test_hello.svn/test_hello.py/
+-bash: cd: /Users/ahsannadeem/test_hello.svn/test_hello.py/: No such file or directory
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ cd /Users/ahsannadeem/Desktop/test_hello.svn/test_hello.py/
+-bash: cd: /Users/ahsannadeem/Desktop/test_hello.svn/test_hello.py/: Not a directory
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ cd test_hello.py/
+-bash: cd: test_hello.py/: Not a directory
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ cd ~/test_hello.py/
+-bash: cd: /Users/ahsannadeem/test_hello.py/: No such file or directory
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ cd test_hello.svn/test_hello.py/
+-bash: cd: test_hello.svn/test_hello.py/: No such file or directory
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ svn commit -m "invert assert symbol" test_hello.py
+svn: E155007: '/Users/ahsannadeem/Desktop/test_hello.svn/test_hello.py' is not a working copy
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ svn add /Users/ahsannadeem/Desktop/test_hello.svn/test_hello.py
+svn: E155007: '/Users/ahsannadeem/Desktop/test_hello.svn' is not a working copy
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ svn add test_hello.py
+svn: E155007: '/Users/ahsannadeem/Desktop/test_hello.svn' is not a working copy
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ svn checkout
+svn: E205001: Try 'svn help checkout' for more information
+svn: E205001: Not enough arguments provided
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ svn checkout test_hello.py
+svn: E205000: Try 'svn help checkout' for more information
+svn: E205000: Error parsing arguments
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ cd Repo2/
+-bash: cd: Repo2/: No such file or directory
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ cd ~/Desktop/Repo2/
+ahsns-MacBook-Air:Repo2 ahsannadeem$ svn add test_hello.svn
+svn: E155007: '/Users/ahsannadeem/Desktop/Repo2' is not a working copy
+ahsns-MacBook-Air:Repo2 ahsannadeem$ cd test_hello.svn
+-bash: cd: test_hello.svn: No such file or directory
+ahsns-MacBook-Air:Repo2 ahsannadeem$ cd ~/Desktop/test_hello.svn/
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ svn add test_hello.py
+svn: E155007: '/Users/ahsannadeem/Desktop/test_hello.svn' is not a working copy
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ svn commiy
+Unknown subcommand: 'commiy'
+Type 'svn help' for usage.
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ svn commit
+svn: E155007: '/Users/ahsannadeem/Desktop/test_hello.svn' is not a working copy
+ahsns-MacBook-Air:test_hello.svn ahsannadeem$ 
