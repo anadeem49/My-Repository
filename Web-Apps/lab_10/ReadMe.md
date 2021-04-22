@@ -1,1 +1,1 @@
-This lab will utilize CSS animations. It will consist of animated revolving images of Earth and Mars, with the help and inspiration of this tutorial: https://www.youtube.com/watch?v=ib8AYFCZtdk&list=WL&index=55
+This lab will utilize CSS animations. It will consist of HTML and (animated) CSS which will "produce" revolving images of Earth and Mars, with the help and inspiration of this tutorial: https://www.youtube.com/watch?v=ib8AYFCZtdk&list=WL&index=55
